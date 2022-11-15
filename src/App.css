@@ -1,33 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
+  background-color: #F6F2FF;
+  color: #252323;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +16,209 @@
   to {
     transform: rotate(360deg);
   }
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  height: 6em;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #F6F2FF;
+  width: 100%;
+}
+.banner {
+  background-image: url("../public/pwimage.jpeg");
+  height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar > * {
+  text-decoration: none;
+  color: #252323;
+}
+.concrete-steps {
+  margin-top: 5em;
+}
+
+button {
+  background-color: #E6FF00;
+  border-radius: 5px;
+  border: none;
+  padding: 1em;
+  color: #252323;
+}
+.promo {
+  color: #E6FF00;
+  background-color: #70798C;
+  width: 100%;
+}
+
+.call-btn {
+  color: #E6FF00;
+  width: 11em;
+  background-color: #70798C;
+}
+.logo {
+   height: 100%;
+   width: 100%;
+}
+.logo-container {
+  height: 6em;
+  width: 6em;
+  background-image: url("../public/cc.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  padding: 1em;
+  background-color: #F6F2FF;
+  color: #252323;
+}
+.services-grid-item {
+  height: 20em;
+  width: 20em;
+  background-color: #252323;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#driveway {
+  background-image: url(../public/driveway.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#deck {
+  background-image: url(../public/deck.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#house {
+  background-image: url(../public/house.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#paint {
+  background-image: url(../public/paint.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#rust {
+  background-image: url(../public/rust.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.service-description {
+  background-color: #252323;
+  color: #E6FF00;
+  opacity: .9;
+  height: 7em;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services-general {
+  background-color: #70798C;
+  color: #282c34;
+  padding: 10em;
+  display: flex;
+  flex-direction: column;
+}
+.services-general > *{
+  font-size: 1.5em;
+}
+.services-important {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.banner-btn-container {
+  width: 70%;
+  background-color: #252323;
+  opacity: .8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  flex-direction: column;
+  padding: 3em;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Titillium Web', sans-serif;
+}
+.banner-btn-container h1 {
+  color: #F6F2FF;
+}
+.banner-btn {
+  background-color: #E6FF00;
+  color: #252323;
+}
+.concrete-steps {
+  width: 65%;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.concrete-icon {
+  height: 5em;
+  width: 3em;
+}
+.concrete-icon {
+  color: #84B59F;
+}
+.hamburger-icon {
+  width: 2em;
+  height: 2em;
+}
+.quote-btn {
+  width: 11em;
+  background-color: #70798C;
+  color: #E6FF00;
+}
+.nav-btns {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  margin: 1em 0;
+}
+.hamburger-icon {
+  width: 96px;
+}
+.quote-form-container {
+  width: 100%;
+}
+.quote-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.quote-form label {
+  width: 15em;
+}
+.quote-form input {
+  width: 20em;
+  height: 2em;
+}
+.form-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
 }
