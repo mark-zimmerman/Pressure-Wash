@@ -35,28 +35,7 @@ const { client } = require('./db');
 const PORT = 4000;
 
 //env variable 
-require("dotenv").config();
-
-// //nodemailer config
-const nodemailer = require("nodemailer");
-
-const transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-        user: process.env.AUTH_EMAIL,
-        pass: process.env.AUTH_PASS
-    }
-})
-//testing nodmailer success
-transporter.verify((error, success) => {
-    if (error) {
-        console.log(error);
-    } else {
-        console.log("Ready for messages");
-        console.log(success);
-    }
-})
-
+// 
 //define a server handle to close op tcp connection after unit tests have run
 const handle = server.listen(PORT, async () => {
     console.log(`Server is running on ${PORT}!`);

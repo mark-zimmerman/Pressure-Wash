@@ -2,7 +2,29 @@ import {React, useRef} from 'react';
 import axios from 'axios';
 
 const QuoteForm = (props) => {
-    const {firstName, setFirstName, lastName, setLastName, email, setEmail, phone, setPhone, concrete, setConcrete, house, setHouse, deck, setDeck, patio, setPatio, fence, setFence, additionalInfo, setAdditionalInfo} = props;
+    const {
+        firstName, 
+        setFirstName, 
+        lastName,
+        setLastName, 
+        email, 
+        setEmail,
+        phone, 
+        setPhone, 
+        concrete, 
+        setConcrete, 
+        house, 
+        setHouse, 
+        deck, 
+        setDeck, 
+        patio, 
+        setPatio, 
+        fence, 
+        setFence, 
+        additionalInfo, 
+        setAdditionalInfo, 
+        
+    } = props;
     const ref = useRef([]);
 
     const resetState = () => {
@@ -22,7 +44,7 @@ const QuoteForm = (props) => {
         }
     }
     const addOrder = async (event) => {
-        event.preventDefault();
+        setTimeout(alert('Thank you for your feedback.'), 5000)
         try {
             const response = await axios.post(
             "/api/order/",
@@ -40,6 +62,7 @@ const QuoteForm = (props) => {
             }
             );
             resetState();
+            event.preventDefault();
             console.log(response);
         } catch (error) {
             console.log(error);
@@ -64,18 +87,18 @@ const QuoteForm = (props) => {
     return (
       <div className="quote-form-container">
         <form className="quote-form" onSubmit={addOrder}> 
-            <legend>Name</legend>
-            <div className="form-row">
+            <h1>Request a Free Quote</h1>
+            <div className="form-row name-container">
                 <div className="col">
-                    <label>First</label>
+                    <label>First Name</label>
                     <input type="text" required value={firstName} onChange={(event) => setFirstName(event.target.value)}></input>
                 </div>
                 <div className="col">
-                    <label>Last</label>
+                    <label>Last Name</label>
                     <input type="text" required value={lastName} onChange={(event) => setLastName(event.target.value)}></input>
                 </div>
             </div>
-            <div className="form-row">
+            <div className="form-row contact-container">
                 <div className="col">
                     <label>Email</label>
                     <input type="email" required value={email} onChange={(event) => setEmail(event.target.value)}></input>
@@ -85,32 +108,66 @@ const QuoteForm = (props) => {
                     <input type="tel" required value={phone} onChange={(event) => setPhone(event.target.value)}></input>
                 </div>
             </div>
-            <div className="column">
-                <div className="form-row">
+            <div className="form-row">
+                <div className="col">
+                    <label>Street</label>
+                    <input type="street" 
+                        class="form-control" 
+                        id="autocomplete" 
+                        ></input>
+                </div>
+                <div className="col">
+                    <label>City</label>
+                    <input type="city" 
+                    class="form-control" 
+                    id="inputCity" 
+                    >
+                    </input>
+                </div>
+            </div>
+            <div className="form-row">
+                <div className="col">
+                    <label>State</label>
+                    <input type="state" 
+                    class="form-control" 
+                    id="inputState" 
+                     ></input>
+                </div>
+                <div className="col">
+                    <label>Zip</label>
+                    <input type="zip" 
+                    class="form-control" 
+                    id="inputZip" 
+                   >
+                    </input>
+                </div>
+            </div>
+            <div className="column check-col">
+                <div className="job-form-row">
                     <input type="checkbox" ref={(element) => { ref.current[0] = element }} value="concrete" onChange={(e) => handleChange(e)}></input>
                     <label>Concrete Wash and Seal</label>
                 </div>
-                <div className="form-row">
+                <div className="job-form-row">
                     <input type="checkbox"  ref={(element) => { ref.current[1] = element }} value="house" onChange={(e) => handleChange(e)}></input>
                     <label>House Wash</label>
                 </div>
-                <div className="form-row">
+                <div className="job-form-row">
                     <input type="checkbox" ref={(element) => { ref.current[2] = element }} value="deck" onChange={(e) => handleChange(e)}></input>
                     <label>Deck Wash</label>
                 </div>
-                <div className="form-row">
+                <div className="job-form-row">
                     <input type="checkbox"  ref={(element) => { ref.current[3] = element }} value="patio" onChange={(e) => handleChange(e)}></input>
                     <label>Patio Wash</label>
                 </div>
-                <div className="form-row">
+                <div className="job-form-row">
                     <input type="checkbox"  ref={(element) => { ref.current[4] = element }} value="fence" onChange={(e) => handleChange(e)}></input>
                     <label>Fence Wash</label>
                 </div>
-                <div className="col">
-                    <label>Additional Information</label>
+                <div className="col text-area">
+                    <label className="text-center">Additional Information</label>
                     <textarea name="additional info" onChange={(e)=> handleChange(e)}/> 
                 </div>     
-                <button typeof="submit">Submit</button>
+                <button className="quote-submit-btn" typeof="submit">Submit</button>
             </div>
             
         </form>
