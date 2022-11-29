@@ -2,6 +2,17 @@
   "name": "pw",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "client:dev": "react-scripts start",
+    "client:build": "react-scripts build",
+    "db:build": "node ./db/init_db",
+    "server:dev": "nodemon index.js",
+    "start:dev": "concurrently \"npm run client:build\" \"npm run client:dev\" \"npm run server:dev\""
+  },
   "dependencies": {
     "axios": "^1.1.3",
     "concurrently": "^7.5.0",
@@ -20,17 +31,7 @@
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "client:dev": "react-scripts start",
-    "client:build": "react-scripts build",
-    "db:build": "node ./db/init_db",
-    "server:dev": "nodemon index.js",
-    "start:dev": "concurrently \"npm run client:build\" \"npm run client:dev\" \"npm run server:dev\""
-  },
+  
   "proxy": "http://localhost:4000",
   "eslintConfig": {
     "extends": [
