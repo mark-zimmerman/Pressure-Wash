@@ -16,11 +16,9 @@ const client = new Pool({
     host: 'db.bit.io',
     database: process.env.DATABASE_URL, // public database 
     password: 'v2_3w9cY_ZDYzPGhwpTzydTPSBXV2BBH', // key from bit.io database page connect menu
-    port: 5432,
+    port: process.env.PORT || 4000,
     ssl: true,
 });
 console.log('pool', client)
-// pool.query('SELECT * FROM "dliden/2020_Census_Reapportionment"."Historical Apportionment" limit 10;', (err, res) => {
-//     console.table(res.rows); // you could also just console.log, but console.table is neat :)
-// });
+
 module.exports = client;
