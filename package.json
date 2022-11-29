@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "node index.js",
+    "start": "react-scripts start",
     "client:dev": "react-scripts start",
     "client:build": "react-scripts build",
     "db:build": "node ./db/init_db",
