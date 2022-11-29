@@ -4,12 +4,11 @@
   "private": true,
   "scripts": {
     "start": "node index.js",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "client:dev": "react-scripts start",
     "client:build": "react-scripts build",
     "db:build": "node ./db/init_db",
     "server:dev": "nodemon index.js",
+    "build": "react-scripts build",
     "start:dev": "concurrently \"npm run client:build\" \"npm run client:dev\" \"npm run server:dev\""
   },
   "dependencies": {
