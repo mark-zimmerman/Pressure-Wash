@@ -34,20 +34,44 @@ console.log('were in the order api outside of the post handler thingy');
 orderRouter.post('/', async (req, res, next) => {
     console.log('were in the order api');
     const {firstName, lastName, email, phone, concrete, house, deck, patio, fence, additionalInfo} = req.body;
+    console.log(firstName, lastName, email, phone, concrete, house, deck, patio, fence, additionalInfo)
     try {
         const order = await addOrder(firstName, lastName, email, phone, concrete, house, deck, patio, fence, additionalInfo);
         console.log(order);
 
-        const mailOptions = {
+        const customerMessage = {
             from: process.env.AUTH_EMAIL,
             to: email,
             subject: "convene clean",
-            text: `Hello ${firstName}, thank you for your interest in Conven Clean!
+            text: `Hello ${firstName}, thank you for your interest in Convene Clean!
             We will send your quote within 24 hours.`
         }
+        const conveneCleanMessage = {
+            from: process.env.AUTH_EMAIL,
+            to: process.env.AUTH_EMAIL,
+            subject: "New Quote Request",
+            text: `Name: ${firstName} ${lastName},
+                   Email: ${email},
+                   Phone: ${phone},
+                   Concrete: ${concrete},
+                   House: ${house},
+                   Deck: ${deck},
+                   Patio: ${patio},
+                   Fence: ${fence},
+                   Additional Info: ${additionalInfo}
+                `
+        }
+        transporter
+            .sendMail(customerMessage)
+            .then(()=> {
+                console.log("success")
+            })
+            .catch((error) => {
+                console.log(error);
+            })
 
         transporter
-            .sendMail(mailOptions)
+            .sendMail(conveneCleanMessage)
             .then(()=> {
                 console.log("success")
             })

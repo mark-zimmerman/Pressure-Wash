@@ -143,23 +143,23 @@ const QuoteForm = (props) => {
                 </div>
             </div>
             <div className="column check-col">
-                <div className="job-form-row">
+                <div className="job-form-row checkbox-container">
                     <input type="checkbox" ref={(element) => { ref.current[0] = element }} value="concrete" onChange={(e) => handleChange(e)}></input>
                     <label>Concrete Wash and Seal</label>
                 </div>
-                <div className="job-form-row">
+                <div className="job-form-row checkbox-container">
                     <input type="checkbox"  ref={(element) => { ref.current[1] = element }} value="house" onChange={(e) => handleChange(e)}></input>
                     <label>House Wash</label>
                 </div>
-                <div className="job-form-row">
+                <div className="job-form-row checkbox-container">
                     <input type="checkbox" ref={(element) => { ref.current[2] = element }} value="deck" onChange={(e) => handleChange(e)}></input>
                     <label>Deck Wash</label>
                 </div>
-                <div className="job-form-row">
+                <div className="job-form-row checkbox-container">
                     <input type="checkbox"  ref={(element) => { ref.current[3] = element }} value="patio" onChange={(e) => handleChange(e)}></input>
                     <label>Patio Wash</label>
                 </div>
-                <div className="job-form-row">
+                <div className="job-form-row checkbox-container">
                     <input type="checkbox"  ref={(element) => { ref.current[4] = element }} value="fence" onChange={(e) => handleChange(e)}></input>
                     <label>Fence Wash</label>
                 </div>

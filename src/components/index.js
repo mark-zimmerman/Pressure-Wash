@@ -6,3 +6,5 @@ export {default as Concrete} from './Concrete';
 export {default as QuoteForm} from './QuoteForm';
 export {default as SmallScreenMenu} from './SmallScreenMenu';
 export {default as HowItWorks} from './HowItWorks';
+export {default as Pricing} from './Pricing';
+export {default as Footer} from './Footer';

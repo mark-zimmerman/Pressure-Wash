@@ -6,7 +6,7 @@
 }
 .App {
   text-align: center;
-  background-color: #F6F2FF;
+  background-color: #FFFFFF;
   color: #252323;
 }
 @keyframes App-logo-spin {
@@ -23,7 +23,7 @@
   height: 6em;
   align-items: center;
   justify-content: space-around;
-  background-color: #F6F2FF;
+  background-color: #FFFFFF;
   width: 100%;
 }
 .banner {
@@ -45,25 +45,28 @@
   gap: 2em;
 }
 
-button {
+button, .services-quote-btn {
   background-color: #CEFF1A;
   border-radius: 5px;
   border: none;
   padding: 1em;
   color: #252323;
   font-weight: bold;
-}
-.promo {
-  color: #252323;
-  background-color: #84B59F;
-  width: 100%;
+  text-decoration: none;
+  font-size: 13.33px;
+  font-size: 13.33px;
 }
 
-.call-btn {
-  color: #CEFF1A;
-  width: 11em;
+.promo {
+  color: #FFFFFF;
   background-color: #252323;
+  width: 100%;
 }
+.call-btn {
+  background-color: #252323;
+  color: #CEFF1A;
+}
+
 .logo {
    height: 100%;
    width: 100%;
@@ -80,9 +83,8 @@ button {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2em;
-  padding: 1em;
-  background-color: #F6F2FF;
   color: #252323;
+  margin-bottom: 2em;
 }
 .services-grid-item {
   background-color: #252323;
@@ -155,15 +157,16 @@ button {
   border-radius: 5px;
   flex-direction: column;
   padding: 3em;
+  gap: 1em;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Titillium Web', sans-serif;
 }
 .banner-btn-container h1 {
-  color: #F6F2FF;
+  color: #FFFFFF;
 }
 .banner-btn {
-  background-color: #84B59F;
+  background-color: 847e89;
   color: #252323;
 }
 .concrete-steps {
@@ -181,21 +184,26 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-around;
   align-items: center;
 }
-.concrete-icon {
+.step-icon {
   height: 5em;
   width: 3em;
+  color: 847e89;
 }
-.concrete-icon {
-  color: #84B59F;
-}
+
 .hamburger-icon {
   width: 2em;
   height: 2em;
 }
 .quote-btn {
   width: 11em;
-  background-color: #252323;
-  color: #CEFF1A;
+  background-color: #CEFF1A;
+  color: #252323;
+  border-radius: 5px;
+  border: none;
+  padding: 1em;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13.333px;
 }
 .nav-btns {
   display: flex;
@@ -212,7 +220,7 @@ h1, h2, h3, h4, h5, h6 {
 .quote-form {
   display: flex;
   flex-direction: column;
-  padding: 3em;
+  padding: 5em 3em;
 }
 .quote-form label {
   width: 15em;
@@ -246,8 +254,13 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 430px;
 }
 
-.quote-form-container {
-  background-color: #84B59F;
+/* .quote-form-container {
+  background-color: 847e89;
+} */
+input, textarea {
+  background-color: #FFFFFF;
+  border: 1px solid #252323;
+  accent-color: #929191;
 }
 
 .form-row {
@@ -259,7 +272,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .quote-submit-btn {
   background-color: #252323;
-  color: #CEFF1A;
+  color: #FFFFFF;
 }
 textarea {
   width: 370px;
@@ -277,7 +290,7 @@ textarea {
   width: 100%;
 }
 .open-menu > * {
-  color: #F6F2FF;
+  color: #FFFFFF;
   text-decoration: none;
   padding: 1em;
 }
@@ -291,14 +304,17 @@ textarea {
   margin-bottom: 2em;
 }
 .service-info {
-  background-color: #84B59F;
+  background-color: #252323;
+  border-bottom: 2x solid white;
   display: flex;
   flex-direction: column;
   gap: 2em;
   align-items: center;
   justify-content: center;
-  flex-basis: auto;
   height: 30em;
+  flex: 1 0 0;
+  height: 30em;
+  width: 100%;
 }
 .service-info p {
   padding: 2em;
@@ -317,41 +333,48 @@ textarea {
 .what-we-clean h3 {
   margin-bottom: 2em;
 }
-.service-info {
-  /* width: 100%;
-  height: 100%; */
-  background-color: #84B59F;
-  flex: 1 0 0;
-  height: 30em;
-  width: 100%;
-}
 .services-container {
-  padding: 5em;
-  gap: 2em;
+  padding: 5em 0;
+  /* gap: 2em;  */
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 .service-container {
-  background-color: #84B59F;
+  background-color: #252323;
+  color: #FFFFFF;
   width: 100%;
   height: 30em;
   display: flex;
   flex-direction: row;
+}
+@media screen and (max-width: 500px) {
+  .banner-btn-container {
+    padding: 1em;
+  }
+  .checkbox-container input{
+    width: 3em;
+  }
 }
 @media screen and (max-width: 1000px) {
   .service-container {
     display: flex;
     height: 100%;
     flex-direction: column;
-  }
-  .services-grid-item {
-    height: 30em;
+    background-color: #252323;
     
   }
   .service-info {
     padding: 2em;
   }
+  .services-container {
+    gap: 0;
+  }
+  .services-grid-item {
+    height: 30em;
+    
+  }
+  
   .service-description {
     background-color: #252323;
     color: #CEFF1A;
@@ -363,4 +386,40 @@ textarea {
     align-items: center;
     margin: 5em;
   }
+}
+.how-it-works {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 5em 0;
+}
+.satisfaction {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FFFFFF;
+  color: #252525;
+}
+.satisfaction-svg {
+  height: 100%;
+  width: 100%;
+}
+.satisfaction div {
+  padding: 2em;
+  /* margin-top: 2em; */
+}
+.works-steps {
+  margin-bottom: 2em;
+}
+.pricing {
+  padding: 5em 6em;
+  gap: 2em;
+}
+.footer {
+  background-color:#252323;
+  width: 100%;
+  height: 10em;
+  box-shadow: inset;
+  color: #FFFFFF;
 }

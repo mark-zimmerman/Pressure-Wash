@@ -1,6 +1,6 @@
 import { React } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
-import { useMediaQuery } from 'react-responsive'
+import { useMediaQuery } from 'react-responsive';
 import {
   NavLink,
 } from 'react-router-dom';
@@ -18,15 +18,16 @@ const Navbar = (props) => {
           <div className="logo-container"></div>
           { isLargerDisplay &&
             <>
+              <NavLink to='/'>Home</NavLink>
               <NavLink to='/services'>Services</NavLink>
               <NavLink to='/howitworks'>How it Works</NavLink>
-              <NavLink to='/about'>About</NavLink>
+              <NavLink to='/getaquote'>Request a Free Quote</NavLink>
               <NavLink to='/pricing'>Pricing</NavLink>
             </>
           }
           <div className="col nav-btns">
             <button className="call-btn">Call (555) 333-2323</button>
-            <button className="quote-btn">Free Quote</button>
+            <NavLink className="quote-btn" to='/getaquote'>Free Online Quote</NavLink>
           </div>
           { isTabletOrMobile &&
               <AiOutlineMenu className="hamburger-icon" onClick={handleOpen}/>
