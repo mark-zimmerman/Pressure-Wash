@@ -10,7 +10,7 @@
 // console.log('client!!')
 const { Pool } = require('pg');
 require("dotenv").config();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 4000;
 // Create a connection pool using the connection information provided on bit.io.
 const client = new Pool({
     user: 'mark-zimmerman',

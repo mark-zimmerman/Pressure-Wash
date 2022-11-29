@@ -33,7 +33,7 @@ const { client } = require('./db');
 
 //****** will need to change this to capstone when deployed */
 // const PORT = process.env.PORT || 4000;
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 //env variable 
 // 
 //define a server handle to close op tcp connection after unit tests have run
