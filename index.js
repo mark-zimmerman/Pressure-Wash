@@ -33,12 +33,12 @@ const { client } = require('./db');
 
 //****** will need to change this to capstone when deployed */
 // const PORT = process.env.PORT || 4000;
-const PORT = 4000;
+const serverPort = 4000;
 //env variable 
 // 
 //define a server handle to close op tcp connection after unit tests have run
-const handle = server.listen(PORT, async () => {
-    console.log(`Server is running on ${PORT}!`);
+const handle = server.listen(serverPort, async () => {
+    console.log(`Server is running on ${serverPort}!`);
   
     try {
       await client.connect();
