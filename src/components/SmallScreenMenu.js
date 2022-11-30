@@ -13,7 +13,7 @@ const SmallScreenMenu = (props) => {
         <NavLink to='/'>Home</NavLink>
         <NavLink to='/services'>Services</NavLink>
         <NavLink to='/howitworks'>How it Works</NavLink>
-        <NavLink to='/about'>About</NavLink>
+        <NavLink to='/getaquote'>Request a Free Quote</NavLink>
         <NavLink to='/pricing'>Pricing</NavLink>
       </div>
     );

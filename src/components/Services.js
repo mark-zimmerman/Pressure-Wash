@@ -50,7 +50,7 @@ const Services = () => {
             </div>
             <div className="service-container">
                 <div className="service-info">
-                    <p>Our low-pressure “soft-washing” method is utilized to clean your home while keeping the surface material safe in the process. Our cleaning methods and detergents will effectively restore stucco, brick, hardiplank, vinyl, aluminum, and more back to its original beauty! The specific detergents and surfactants that we use create the right blend of chemicals will dig deep into the filth and grime that exist on your home’s exterior and then be easily rinsed away. This process ensures the thorough elimination of that pesky mold and algae yet will NEVER damage your home!</p>
+                    <p>Our low-pressure “soft-washing” method is utilized to clean your fence while keeping the surface material safe in the process. Our cleaning methods and detergents will effectively eliminate all dirt, mud, and microbes.</p>
                     <NavLink className="services-quote-btn" to='/getaquote'>Request Online Quote</NavLink>
                 </div>
                 <div className="services-grid-item" id="fence">
@@ -69,7 +69,7 @@ const Services = () => {
                     </div>
                 </div>
                 <div className="service-info">
-                    <p>We gently wash all wood and composite deck boards, steps, and railings with a custom cleanser and algaecide. The cleanser lifts and removes surface marks while the algaecide eliminates organic growth and protects your deck against future damage.</p>
+                    <p>We use fast acting commercial rust solution to safely clean rust stains off all surfaces.</p>
                     <NavLink className="services-quote-btn" to='/getaquote'>Request Online Quote</NavLink>
                 </div>
                 
@@ -78,7 +78,7 @@ const Services = () => {
             
             <div className="service-container">
                 <div className="service-info">
-                    <p>We gently wash all wood and composite deck boards, steps, and railings with a custom cleanser and algaecide. The cleanser lifts and removes surface marks while the algaecide eliminates organic growth and protects your deck against future damage.</p>
+                    <p>We use a commercial graffiti removal solution to safely clean graffiti off all surfaces.</p>
                     <NavLink className="services-quote-btn" to='/getaquote'>Request Online Quote</NavLink>
                 </div>
                 <div className="services-grid-item" id="paint">
@@ -137,7 +137,7 @@ const Services = () => {
                     </div>
                 </div>
                 <div className="service-info">
-                    <p>Our low-pressure “soft-washing” method is utilized to clean your home while keeping the surface material safe in the process. Our cleaning methods and detergents will effectively restore stucco, brick, hardiplank, vinyl, aluminum, and more back to its original beauty! The specific detergents and surfactants that we use create the right blend of chemicals will dig deep into the filth and grime that exist on your home’s exterior and then be easily rinsed away. This process ensures the thorough elimination of that pesky mold and algae yet will NEVER damage your home!</p>
+                    <p>Our low-pressure “soft-washing” method is utilized to clean your fence while keeping the surface material safe in the process. Our cleaning methods and detergents will effectively eliminate all dirt, mud, and microbes.</p>
                     <NavLink className="services-quote-btn" to='/getaquote'>Request Online Quote</NavLink>
                 </div>
                 
@@ -151,7 +151,7 @@ const Services = () => {
                     </div>
                 </div>
                 <div className="service-info">
-                    <p>We gently wash all wood and composite deck boards, steps, and railings with a custom cleanser and algaecide. The cleanser lifts and removes surface marks while the algaecide eliminates organic growth and protects your deck against future damage.</p>
+                    <p>We use fast acting commercial rust solution to safely clean rust stains off all surfaces.</p>
                     <NavLink className="services-quote-btn" to='/getaquote'>Request Online Quote</NavLink>
                 </div>
                 
@@ -166,7 +166,7 @@ const Services = () => {
                     </div>
                 </div>
                 <div className="service-info">
-                    <p>We gently wash all wood and composite deck boards, steps, and railings with a custom cleanser and algaecide. The cleanser lifts and removes surface marks while the algaecide eliminates organic growth and protects your deck against future damage.</p>
+                    <p>We use a commercial graffiti removal solution to safely clean graffiti off all surfaces.</p>
                     <NavLink className="services-quote-btn" to='/getaquote'>Request Online Quote</NavLink>
                 </div>
                 
