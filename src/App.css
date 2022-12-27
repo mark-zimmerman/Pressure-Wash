@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .App {
   text-align: center;
   background-color: #FFFFFF;
@@ -42,7 +43,14 @@
 }
 .concrete-steps {
   margin: 5em 0;
-  gap: 2em;
+  gap: 1em;
+}
+a {
+  padding: .75em;
+  border-radius: 5px;
+}
+a:hover, .active {
+  background-color: #14BBE2;
 }
 
 button, .services-quote-btn {
@@ -83,11 +91,14 @@ button, .services-quote-btn {
    width: 100%;
 }
 .logo-container {
-  height: 6em;
-  width: 6em;
-  background-image: url("../public/cc.png");
+  margin-top: 1em;
+  height: 12em;
+  width: 12em;
+  background-image: url("../public/ohiopremium.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  background-position: center;
+  
 }
 .services {
   display: flex;
@@ -202,7 +213,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hamburger-icon {
-  width: 2em;
+  width: 12em;
   height: 2em;
 }
 .quote-btn {
@@ -222,9 +233,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   margin: 1em 0;
 }
-.hamburger-icon {
+/* .hamburger-icon {
   width: 96px;
-}
+} */
 .quote-form-container {
   width: 100%;
   background-color: #dbdbdb
@@ -405,6 +416,7 @@ textarea {
   flex-direction: column;
   gap: 2em;
   padding-top: 5em;
+  width: 100%;
 }
 .satisfaction {
   display: flex;
