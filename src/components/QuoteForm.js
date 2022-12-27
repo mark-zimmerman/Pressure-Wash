@@ -165,7 +165,7 @@ const QuoteForm = (props) => {
                 </div>
                 <div className="col text-area">
                     <label className="text-center">Additional Information</label>
-                    <textarea name="additional info" onChange={(e)=> handleChange(e)}/> 
+                    <textarea name="additional-info" onChange={(e)=> handleChange(e)}/> 
                 </div>     
                 <button className="quote-submit-btn" typeof="submit">Submit</button>
             </div>

@@ -44,9 +44,6 @@
   margin: 5em 0;
   gap: 2em;
 }
-body {
-  position: absolute;
-}
 
 button, .services-quote-btn {
   background-color: #14BBE2;
@@ -266,7 +263,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   gap: 2em;
-  min-width: 430px;
+  /* min-width: 430px; */
 }
 
 /* .quote-form-container {
