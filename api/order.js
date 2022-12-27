@@ -29,8 +29,6 @@ transporter.verify((error, success) => {
 })
 
 
-console.log('were in the order api outside of the post handler thingy');
-
 orderRouter.post('/', async (req, res, next) => {
     console.log('were in the order api');
     const {firstName, lastName, email, phone, concrete, house, deck, patio, fence, additionalInfo} = req.body;
@@ -42,8 +40,8 @@ orderRouter.post('/', async (req, res, next) => {
         const customerMessage = {
             from: process.env.AUTH_EMAIL,
             to: email,
-            subject: "convene clean",
-            text: `Hello ${firstName}, thank you for your interest in Convene Clean!
+            subject: "Ohio Premium Pressure Washing",
+            text: `Hello ${firstName}, thank you for your interest in Ohio Premium Pressure Washing!
             We will send your quote within 24 hours.`
         }
         const conveneCleanMessage = {
