@@ -44,13 +44,13 @@ const Services = () => {
                     </div>
                 </div>
                 <div className="service-info">
-                    <p>We gently wash all wood and composite deck boards, steps, and railings with a custom cleanser and algaecide. The cleanser lifts and removes surface marks while the algaecide eliminates organic growth and protects your deck against future damage.</p>
+                <p>We will <b>bring your deck back to life without damaging it!</b> We use an array of cleaning methods and solutions dependent on the material of your deck. For wood decks we have different processes for each wood type and condition of your wood. We do not just clean wood, we <b>RESTORE</b> it!</p>
                     <NavLink className="services-quote-btn" to='/getaquote'>Request Online Quote</NavLink>
                 </div>
             </div>
             <div className="service-container">
                 <div className="service-info">
-                    <p>Our low-pressure “soft-washing” method is utilized to clean your fence while keeping the surface material safe in the process. Our cleaning methods and detergents will effectively eliminate all dirt, mud, and microbes.</p>
+                    <p>We will bring your fence back to life without damaging it. We use an array of cleaning methods and solutions dependent on the material of your fence. For wood fences we have different processes for each wood type and condition of your fence to ensure a great result.</p>
                     <NavLink className="services-quote-btn" to='/getaquote'>Request Online Quote</NavLink>
                 </div>
                 <div className="services-grid-item" id="fence">
@@ -69,7 +69,7 @@ const Services = () => {
                     </div>
                 </div>
                 <div className="service-info">
-                    <p>We use fast acting commercial rust solution to safely clean rust stains off all surfaces.</p>
+                    <p>We use fast acting commercial rust solutions to safely clean rust stains off all surfaces.</p>
                     <NavLink className="services-quote-btn" to='/getaquote'>Request Online Quote</NavLink>
                 </div>
                 
@@ -125,7 +125,7 @@ const Services = () => {
                     </div>
                 </div>
                 <div className="service-info">
-                    <p>We gently wash all wood and composite deck boards, steps, and railings with a custom cleanser and algaecide. The cleanser lifts and removes surface marks while the algaecide eliminates organic growth and protects your deck against future damage.</p>
+                    <p>We will <b>bring your deck back to life without damaging it!</b> We use an array of cleaning methods and solutions dependent on the material of your deck. For wood decks we have different processes for each wood type and condition of your wood. We do not just clean wood, we <b>RESTORE</b> it!</p>
                     <NavLink className="services-quote-btn" to='/getaquote'>Request Online Quote</NavLink>
                 </div>
             </div>
@@ -137,7 +137,7 @@ const Services = () => {
                     </div>
                 </div>
                 <div className="service-info">
-                    <p>Our low-pressure “soft-washing” method is utilized to clean your fence while keeping the surface material safe in the process. Our cleaning methods and detergents will effectively eliminate all dirt, mud, and microbes.</p>
+                    <p>We will bring your fence back to life without damaging it. We use an array of cleaning methods and solutions dependent on the material of your fence. For wood fences we have different processes for each wood type and condition of your fence to ensure a great result.</p>
                     <NavLink className="services-quote-btn" to='/getaquote'>Request Online Quote</NavLink>
                 </div>
                 
@@ -151,7 +151,7 @@ const Services = () => {
                     </div>
                 </div>
                 <div className="service-info">
-                    <p>We use fast acting commercial rust solution to safely clean rust stains off all surfaces.</p>
+                    <p>We use fast acting commercial rust solutions to safely clean rust stains off all surfaces.</p>
                     <NavLink className="services-quote-btn" to='/getaquote'>Request Online Quote</NavLink>
                 </div>
                 

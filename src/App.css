@@ -46,7 +46,7 @@
 }
 
 button, .services-quote-btn {
-  background-color: #CEFF1A;
+  background-color: #14BBE2;
   border-radius: 5px;
   border: none;
   padding: 1em;
@@ -57,6 +57,17 @@ button, .services-quote-btn {
   font-size: 13.33px;
 }
 
+.services-quote-btn {
+  background-color: #14BBE2;
+  border-radius: 5px;
+  border: none;
+  padding: 1em;
+  color: #252323;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 13.33px;
+}
+
 .promo {
   color: #FFFFFF;
   background-color: #252323;
@@ -64,7 +75,7 @@ button, .services-quote-btn {
 }
 .call-btn {
   background-color: #252323;
-  color: #CEFF1A;
+  color: #14BBE2;
 }
 
 .logo {
@@ -126,7 +137,7 @@ button, .services-quote-btn {
 }
 .service-description {
   background-color: #252323;
-  color: #CEFF1A;
+  color: #14BBE2;
   opacity: .9;
   height: 7em;
   width: 80%;
@@ -196,7 +207,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .quote-btn {
   width: 11em;
-  background-color: #CEFF1A;
+  background-color: #14BBE2;
   color: #252323;
   border-radius: 5px;
   border: none;
@@ -216,6 +227,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .quote-form-container {
   width: 100%;
+  background-color: #dbdbdb
 }
 .quote-form {
   display: flex;
@@ -304,11 +316,12 @@ textarea {
   margin-bottom: 2em;
 }
 .service-info {
-  background-color: #252323;
+  background-color: white;
   border-bottom: 2x solid white;
   display: flex;
   flex-direction: column;
   gap: 2em;
+  color: #252323;
   align-items: center;
   justify-content: center;
   height: 30em;
@@ -334,7 +347,7 @@ textarea {
   margin-bottom: 2em;
 }
 .services-container {
-  padding: 5em 0;
+  padding-top: 5em;
   /* gap: 2em;  */
   display: flex;
   flex-direction: column;
@@ -377,7 +390,7 @@ textarea {
   
   .service-description {
     background-color: #252323;
-    color: #CEFF1A;
+    color: #14BBE2;
     opacity: .9;
     height: 7em;
     width: 80%;
@@ -391,14 +404,14 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 2em;
-  padding: 5em 0;
+  padding-top: 5em;
 }
 .satisfaction {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: #FFFFFF;
+  background-color: #dbdbdb;
   color: #252525;
 }
 .satisfaction-svg {

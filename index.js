@@ -26,17 +26,12 @@ server.use((req, res, next) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
   });
 
-//error handler may go here
-
 // bring in the DB connection
 const { client } = require('./db');
 
-//****** will need to change this to capstone when deployed */
 // const PORT = process.env.PORT || 4000;
 const serverPort = 4000;
-//env variable 
-// 
-//define a server handle to close op tcp connection after unit tests have run
+
 const handle = server.listen(serverPort, async () => {
     console.log(`Server is running on ${serverPort}!`);
   
@@ -48,5 +43,5 @@ const handle = server.listen(serverPort, async () => {
     }
   });
 
-// export server and handle for routes/*.test.js
+
 module.exports = { server, handle };
