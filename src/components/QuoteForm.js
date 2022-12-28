@@ -1,6 +1,6 @@
 import {React, useRef} from 'react';
 import axios from 'axios';
-
+import HubspotForm from 'react-hubspot-form'
 const QuoteForm = (props) => {
     const {
         firstName, 
@@ -86,9 +86,10 @@ const QuoteForm = (props) => {
       }; 
     return (
       <div className="quote-form-container">
-        <form className="quote-form" onSubmit={addOrder}> 
-            <h1>Request a Free Quote</h1>
-            <div className="form-row name-container">
+        <h1>Request a Free Quote</h1>
+        {/* <form className="quote-form" onSubmit={addOrder}> 
+            <h1>Request a Free Quote</h1> */}
+            {/* <div className="form-row name-container">
                 <div className="col">
                     <label>First Name</label>
                     <input type="text" required value={firstName} onChange={(event) => setFirstName(event.target.value)}></input>
@@ -170,7 +171,15 @@ const QuoteForm = (props) => {
                 <button className="quote-submit-btn" typeof="submit">Submit</button>
             </div>
             
-        </form>
+        </form> */}
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+        <HubspotForm
+                portalId='23656045'
+                formId='2c17c945-c1df-4f97-a133-63d14421dfe8'
+                onSubmit={() => console.log('Submit!')}
+                onReady={(form) => console.log('Form ready!')}
+                loading={<div>Loading...</div>}
+            />
       </div>
     );
   }

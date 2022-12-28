@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a0ca02ce.css",
-    "main.js": "/static/js/main.dd28a4c4.js",
+    "main.css": "/static/css/main.13b28ecc.css",
+    "main.js": "/static/js/main.1fbf43a2.js",
     "static/media/Satisfied.svg": "/static/media/Satisfied.c5d06181e4cc79291c15247b8b325702.svg",
     "static/media/rust.jpeg": "/static/media/rust.20df7d71b0f507ddcd7a.jpeg",
     "static/media/deck.jpeg": "/static/media/deck.058475ca7f154f69ec28.jpeg",
@@ -10,13 +10,13 @@
     "static/media/paint.jpeg": "/static/media/paint.daab340113b8f888db23.jpeg",
     "static/media/house.png": "/static/media/house.177ab0f0ee02f86d6594.png",
     "static/media/pwimage.jpeg": "/static/media/pwimage.5e4331b7fe9d50def6e3.jpeg",
-    "static/media/cc.png": "/static/media/cc.5dfa65ccf36c57ed49a9.png",
+    "static/media/ohiopremium.png": "/static/media/ohiopremium.3cfaed01b87350f56219.png",
     "index.html": "/index.html",
-    "main.a0ca02ce.css.map": "/static/css/main.a0ca02ce.css.map",
-    "main.dd28a4c4.js.map": "/static/js/main.dd28a4c4.js.map"
+    "main.13b28ecc.css.map": "/static/css/main.13b28ecc.css.map",
+    "main.1fbf43a2.js.map": "/static/js/main.1fbf43a2.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0ca02ce.css",
-    "static/js/main.dd28a4c4.js"
+    "static/css/main.13b28ecc.css",
+    "static/js/main.1fbf43a2.js"
   ]
 }
